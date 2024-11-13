@@ -26,16 +26,35 @@
     }
 }
 
+.main {
+    &__image {
+        height: 400px;
+        width: 100%;
+ //       object-fit: contain;
+    }
+}
+
 .section {
     display: flex;
+    justify-content: center;
 }
 
 .article {
+    width: 33%;
+    padding: 10px;
     &__figure {
         &--image {
             width: 90%;
+            //height: 150px;
             height: 70%;
             object-fit: cover;
         }
     }
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+//    justify-content: center;
+//    justify-items: center;
 }

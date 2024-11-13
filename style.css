@@ -22,10 +22,24 @@
   top: 0;
 }
 
-.section {
-  display: flex;
+.main__image {
+  height: 400px;
+  width: 100%;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  width: 33%;
+  padding: 10px;
+}
 .article__figure--image {
   width: 90%;
   height: 70%;
