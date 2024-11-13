@@ -8,11 +8,9 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header__nav--flex {
-  display: flex;
-}
 .header__nav ul li {
   list-style: none;
+  display: inline-block;
 }
 
 .skip-to-main {
@@ -23,6 +21,15 @@
   position: relative;
   top: 0;
 }
+
+.main__image {
+  height: 400px;
+  width: 100%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 
 .section {
   display: flex;
@@ -35,14 +42,7 @@
 }
 .article__figure--image {
   width: 90%;
-}
-
-.main__image {
-  height: 400px;
-  width: 100%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
