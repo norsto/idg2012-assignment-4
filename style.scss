@@ -11,13 +11,9 @@
             object-fit: cover;
         }
     }
-    &__nav {
-        &--flex {
-            display: flex; 
-        }
-    }
     &__nav ul li{
         list-style: none;
+        display: inline-block;
     }
 }
 
@@ -37,8 +33,9 @@
 .article {
     &__figure {
         &--image {
-            width: 50%;
-            //height: 150px;
+            width: 90%;
+            height: 70%;
+            object-fit: cover;
         }
     }
 }

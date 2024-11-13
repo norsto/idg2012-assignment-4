@@ -8,11 +8,9 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header__nav--flex {
-  display: flex;
-}
 .header__nav ul li {
   list-style: none;
+  display: inline-block;
 }
 
 .skip-to-main {
@@ -29,5 +27,8 @@
 }
 
 .article__figure--image {
-  width: 50%;
+  width: 90%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
