@@ -8,11 +8,12 @@
 </head>
 <!--Might wanna change the name of this page later-->
 <body>
-    <a href="#main__subpage">Skip to main content</a>
+    <a class="skip-to-main" href="#main__subpage">Skip to main content</a>
 <header class="header">
     <figure class="header__figure">
         <img class="header__figure--banner" src="img/banner.png" alt="Pink clouds">
     </figure>
+
     <nav class="header__nav">
         <!--are you sure we're not supposed to use li-->
         <ul>
@@ -23,23 +24,23 @@
                 <a href="subpage.html">subpage</a>
             </li>
             <li>
-                <a href="">menu3</a>
+                <a href="">About</a>
             </li>
             <li>
-                <a href="">menu4</a>
+                <a href="">Services</a>
             </li>
             <li>
-                <a href="">menu5</a>
+                <a href="">Language</a>
             </li>
             <li>
-                <a href="">menu6</a>
+                <a href="">Help</a>
             </li>
         </ul>
     </nav>
     
 </header>
         
-<main id="main__subpage">
+<main class="main" id="main__subpage">
         
 <section>
 <h1>Title</h1>
@@ -48,32 +49,32 @@
         <p></p>
         <!--create 4x4 table-->
         <!--in pp theres a p encompassing the a, try if it doesn't work how you want-->
-        <a class="hidden" href="">Skip table about...</a>
-        <table summary="">
-            <caption></caption>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
+        <a class="hidden" href="">Skip table about guided tours</a>
+        <table class="table" summary="Table contains information about which tours are offered, the guides, requirements and prices.">
+            <caption>Guided tours</caption>
+            <tr class="table__row">
+                <th scope="col">Tour</th>
+                <th scope="col">Guide</th>
+                <th scope="col">Requirements</th>
+                <th scope="col">Price</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="table__row">
+                <td>Mount Everest, Nepal</td>
+                <td>Michelle McDaniel</td>
+                <td>Solid winter gear</td>
+                <td>10000$ USD</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="table__row">
+                <td>Goðafoss, Iceland</td>
+                <td>Tana Mongeau</td>
+                <td>Any swimming certificate</td>
+                <td>2000$ USD</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr class="table__row">
+                <td>Blue Ridge, Appalachia USA</td>
+                <td>Callum Markie</td>
+                <td>Knowledge of Appalachian creatures</td>
+                <td>1000$ USD</td>
             </tr>
         </table>
     </div>
@@ -87,8 +88,15 @@
     </div>
 </section>
 <!--make a form of sorts-->
-<div class="form">
-    <form action="">
+
+<form action="" name="Request">
+    <div class="form">
+        <label for="requestedTour">Requested tour</label>
+        <input type="text" name="requestedTour">
+
+        <label for="requestedDate">Requested date</label>
+        <input type="date" name="requestedDate">
+
         <label for="FirstName">First name</label>
         <input type="text" name="FirstName">
 
@@ -101,15 +109,9 @@
         <label for="PhoneNumber">Phone number</label>
         <input type="number" name="PhoneNumber">
 
-        <label for=""></label>
-        <input type="text">
-
-        <label for=""></label>
-        <input type="text">
-
-        <button></button>
-    </form>
-</div>
+        <button type="submit" value="submit" aria-label="Submit request">Submit request</button>
+    </div>
+</form>
 
 </main>
 </body>
