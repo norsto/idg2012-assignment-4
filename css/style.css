@@ -11,12 +11,15 @@
 }
 .header__nav ul li {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
   padding-left: 3%;
   padding-right: 3%;
 }
-.header__nav ul li--current :active {
-  background-color: aquamarine;
+.header__nav {
+  margin-top: 2%;
+}
+.header__nav--current {
+  padding: 20px;
 }
 
 .skip-to-main,
@@ -46,13 +49,13 @@
 .section {
   justify-content: center;
   /*
-  &__div {
-      //display: flex;
-      //flex-direction: column;
-      //justify-items: center;
-      display: flex;
-      justify-content: center;
-  }    */
+   &__div {
+       //display: flex;
+       //flex-direction: column;
+       //justify-items: center;
+       display: flex;
+       justify-content: center;
+   }   */
 }
 .section__flex {
   display: flex;
@@ -89,6 +92,10 @@ table th {
 table td {
   background-color: #FFF9F9;
   font-size: 1em;
+}
+table caption {
+  font-size: 1.3em;
+  margin-right: 80%;
 }
 
 table th,
