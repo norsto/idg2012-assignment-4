@@ -22,10 +22,16 @@ $lightgreen: #F3FDE8;
         padding-left: 3%;
         padding-right: 3%;
     //    justify-items: center;
+        &--current {
+            & :active{
+                background-color: aquamarine;
+            }
+        }
     }
 }
 
-.skip-to-main {
+.skip-to-main,
+.hidden {
     position: absolute;
     top: -400px;
     &:focus {
