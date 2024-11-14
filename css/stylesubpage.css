@@ -2,4 +2,9 @@
   background-color: #021333;
   color: #D6E5FA;
   border-radius: 5px;
+}
+
+#button:focus {
+  background-color: #021333;
+  color: #D6E5FA;
 }/*# sourceMappingURL=stylesubpage.css.map */

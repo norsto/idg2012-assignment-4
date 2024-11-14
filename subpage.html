@@ -45,7 +45,7 @@
 <h1 class="main__title">Order your tour!</h1>  
 
 <section class="section__sub">
-<h2>Guided tours</h2>
+<h2 tabindex="0">Guided tours</h2>
     <div class="section__div">
         <p class="easy-to-read">
             We have made a table of some of the most popular tours we offer. If you have questions about our other tours, go to 
@@ -53,7 +53,7 @@
         </p>
         <!--create 4x4 table-->
         <!--in pp theres a p encompassing the a, try if it doesn't work how you want-->
-        <a class="hidden" href="">Skip table about guided tours</a>
+        <a class="hidden" href="#skip">Skip table about guided tours</a>
         <table class="table" summary="Table contains information about which tours are offered, the guides, requirements and prices.">
             <caption><strong>Guided tours</strong></caption>
             <tr class="table__row">
@@ -84,8 +84,8 @@
     </div>
 </section>
 
-<section class="section__sub">
-<h2>Request tour form</h2>
+<section id="skip" class="section__sub">
+<h2 tabindex="0">Request tour form</h2>
     <p class="easy-to-read">
         You will find the form needed to request a tour down below. If the time slot you want is not available, try 
         <a href="">the contact us page</a>
@@ -113,7 +113,7 @@
             <label for="PhoneNumber">Phone number</label>
             <input type="number" name="PhoneNumber">
             
-            <button type="submit" value="submit" aria-label="Submit request">Submit request</button>
+            <button id="button" type="submit" value="submit" aria-label="Submit request">Submit request</button>
         </div>
     </form>
 </section>
