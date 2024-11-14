@@ -18,13 +18,13 @@
         <!--are you sure we're not supposed to use li-->
         <ul>
             <li>
-                <a href="index.html">home page</a>
+                <a href="index.html">Home page</a>
             </li>
             <li>
-                <a href="subpage.html">subpage</a>
+                <a href="subpage.html">Tours</a>
             </li>
             <li>
-                <a href="">About</a>
+                <a href="">Special requests</a>
             </li>
             <li>
                 <a href="">Services</a>
@@ -33,7 +33,7 @@
                 <a href="">Language</a>
             </li>
             <li>
-                <a href="">Help</a>
+                <a href="">Contact us</a>
             </li>
         </ul>
     </nav>
@@ -41,12 +41,16 @@
 </header>
         
 <main class="main" id="main__subpage">
-        
-<section>
-<h1>Title</h1>
-    <div>
-        <h2>2Title</h2>
-        <p></p>
+
+<h1 class="main__title">Order your tour!</h1>  
+
+<section class="section__sub">
+<h2>Guided tours</h2>
+    <div class="section__div">
+        <p class="easy-to-read">
+            We have made a table of some of the most popular tours we offer. If you have questions about our other tours, go to 
+            <a href="">the Special requests page</a>
+        </p>
         <!--create 4x4 table-->
         <!--in pp theres a p encompassing the a, try if it doesn't work how you want-->
         <a class="hidden" href="">Skip table about guided tours</a>
@@ -66,7 +70,7 @@
             </tr>
             <tr class="table__row">
                 <td>Goðafoss, Iceland</td>
-                <td>Tana Mongeau</td>
+                <td>Angelika Oles</td>
                 <td>Any swimming certificate</td>
                 <td>2000$ USD</td>
             </tr>
@@ -80,38 +84,39 @@
     </div>
 </section>
 
-<section>
-<h1></h1>
-    <div>
-        <h2></h2>
-        <p></p>
-    </div>
+<section class="section__sub">
+<h2>Request tour form</h2>
+    <p class="easy-to-read">
+        You will find the form needed to request a tour down below. If the time slot you want is not available, try 
+        <a href="">the contact us page</a>
+    </p>
+
+    <!--make a form of sorts-->
+    
+    <form action="" name="Request">
+        <div class="form">
+            <label for="requestedTour">Requested tour</label>
+            <input type="text" name="requestedTour">
+            
+            <label for="requestedDate">Requested date</label>
+            <input type="date" name="requestedDate">
+            
+            <label for="FirstName">First name</label>
+            <input type="text" name="FirstName">
+            
+            <label for="LastName">Last name</label>
+            <input type="text" name="LastName">
+            
+            <label for="E-mail">E-mail</label>
+            <input type="email" name="E-mail">
+            
+            <label for="PhoneNumber">Phone number</label>
+            <input type="number" name="PhoneNumber">
+            
+            <button type="submit" value="submit" aria-label="Submit request">Submit request</button>
+        </div>
+    </form>
 </section>
-<!--make a form of sorts-->
-
-<form action="" name="Request">
-    <div class="form">
-        <label for="requestedTour">Requested tour</label>
-        <input type="text" name="requestedTour">
-
-        <label for="requestedDate">Requested date</label>
-        <input type="date" name="requestedDate">
-
-        <label for="FirstName">First name</label>
-        <input type="text" name="FirstName">
-
-        <label for="LastName">Last name</label>
-        <input type="text" name="LastName">
-
-        <label for="E-mail">E-mail</label>
-        <input type="email" name="E-mail">
-
-        <label for="PhoneNumber">Phone number</label>
-        <input type="number" name="PhoneNumber">
-
-        <button type="submit" value="submit" aria-label="Submit request">Submit request</button>
-    </div>
-</form>
 
 </main>
 </body>
