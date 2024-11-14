@@ -15,12 +15,17 @@
   padding-left: 3%;
   padding-right: 3%;
 }
+.header__nav ul li--current :active {
+  background-color: aquamarine;
+}
 
-.skip-to-main {
+.skip-to-main,
+.hidden {
   position: absolute;
   top: -400px;
 }
-.skip-to-main:focus {
+.skip-to-main:focus,
+.hidden:focus {
   position: relative;
   top: 0;
 }
