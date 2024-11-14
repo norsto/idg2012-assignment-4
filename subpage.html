@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesubpage.css">
     <title>Document</title>
 </head>
 <!--Might wanna change the name of this page later-->
@@ -18,26 +19,25 @@
         <!--are you sure we're not supposed to use li-->
         <ul>
             <li>
-                <a href="index.html">Home page</a>
+                <a id="homepage" class="header__nav--current" href="index.html">Home page</a>
             </li>
             <li>
-                <a href="subpage.html">Tours</a>
+                <a id="subpage" class="header__nav--current" href="subpage.html">Tours</a>
             </li>
             <li>
-                <a href="">Special requests</a>
+                <a class="header__nav--current" href="">Special requests</a>
             </li>
             <li>
-                <a href="">Services</a>
+                <a class="header__nav--current" href="">Services</a>
             </li>
             <li>
-                <a href="">Language</a>
+                <a class="header__nav--current" href="">Language</a>
             </li>
             <li>
-                <a href="">Contact us</a>
+                <a class="header__nav--current" href="">Contact us</a>
             </li>
         </ul>
     </nav>
-    
 </header>
         
 <main class="main" id="main__subpage">
@@ -55,7 +55,7 @@
         <!--in pp theres a p encompassing the a, try if it doesn't work how you want-->
         <a class="hidden" href="">Skip table about guided tours</a>
         <table class="table" summary="Table contains information about which tours are offered, the guides, requirements and prices.">
-            <caption>Guided tours</caption>
+            <caption><strong>Guided tours</strong></caption>
             <tr class="table__row">
                 <th scope="col">Tour</th>
                 <th scope="col">Guide</th>
