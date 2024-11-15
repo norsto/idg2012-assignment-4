@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesubpage.css">
-    <title>Document</title>
+    <title>Tours</title>
 </head>
-<!--Might wanna change the name of this page later-->
+
 <body>
     <a class="skip-to-main" href="#main__subpage">Skip to main content</a>
 <header class="header">
@@ -16,7 +16,6 @@
     </figure>
 
     <nav class="header__nav">
-        <!--are you sure we're not supposed to use li-->
         <ul>
             <li>
                 <a id="homepage" class="header__nav--current" href="index.html">Home page</a>
@@ -51,10 +50,11 @@
             We have made a table of some of the most popular tours we offer. If you have questions about our other tours, go to 
             <a href="">the Special requests page</a>
         </p>
-        <!--create 4x4 table-->
-        <!--in pp theres a p encompassing the a, try if it doesn't work how you want-->
+        
         <a class="hidden" href="#skip">Skip table about guided tours</a>
-        <table class="table" summary="Table contains information about which tours are offered, the guides, requirements and prices.">
+        <table class="table">
+            <!--This would be the summary: summary="Table contains information about which tours are offered, the guides, requirements 
+            and prices.". It was not supported by HTML5-->
             <caption><strong>Guided tours</strong></caption>
             <tr class="table__row">
                 <th scope="col">Tour</th>
@@ -91,9 +91,8 @@
         <a href="">the contact us page</a>
     </p>
 
-    <!--make a form of sorts-->
-    
-    <form action="" name="Request">
+    <!--I don't actually have an URL to put into action-->
+    <form action="/action" name="Request">
         <div class="form">
             <label for="requestedTour">Requested tour</label>
             <input id="requestedTour" type="text" name="requestedTour" required>
