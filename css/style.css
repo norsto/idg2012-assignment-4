@@ -12,8 +12,9 @@
 .header__nav ul li {
   list-style: none;
   display: inline-flex;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.2em;
 }
 .header__nav {
   margin-top: 2%;
@@ -39,11 +40,17 @@
 .main__image {
   height: 400px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .main__title {
   text-align: center;
   margin-bottom: 5%;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 .section {
@@ -66,15 +73,21 @@
 
 .article {
   width: 33%;
-  padding: 10px;
+  padding: 3%;
   margin-left: 1%;
   margin-right: 1%;
+  background-color: #FFD3DA;
+  border-radius: 10px;
+}
+.article__figure {
+  background-color: #021333;
 }
 .article__figure--image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .easy-to-read {
@@ -119,4 +132,8 @@ table td {
 }
 .form button {
   background-color: #F3FDE8;
+}
+.form button:hover {
+  background-color: #021333;
+  color: #D6E5FA;
 }/*# sourceMappingURL=style.css.map */
